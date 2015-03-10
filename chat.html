@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>My chat</title>
+		  <style>
+		  #massage{
+		  border: 3px solid MidnightBlue;
+		  position:absolute; 
+		  top:530px; 
+		  left:435px;
+		  font-family: verdana, sans-serif;
+		  font-size: 120%;
+		  }
+		  
+		  #massages{
+		  border: 3px solid MidnightBlue;
+		  position:absolute; 
+		  top:103px; 
+		  left:435px;
+		  font-family: verdana, sans-serif;
+		  font-size: 120%;
+		  }
+		  
+		  #man{
+		  position:absolute; 
+		  top:470px; 
+		  left:135px
+		  }
+		  
+		  #me{
+		  position:absolute; 
+		  top:470px; 
+		  left:1435px
+		  }
+		  
+		  #send{
+		  position:absolute;
+          top:620px; 
+		  left:450px;
+		  font-family: verdana, sans-serif;
+		  border: 2px solid SteelBlue;
+		  background-color: SteelBlue;
+		  height: 30px;
+		  width: 60px;
+		  border: 1px solid MidnightBlue;
+		  }
+		  
+		  #reset{
+		  position:absolute;
+          top:655px; 
+		  left:450px;
+		  font-family: verdana, sans-serif;
+		  border: 2px solid SteelBlue;
+		  background-color: SteelBlue;
+		  height: 30px;
+		  width: 60px;
+		  border: 1px solid MidnightBlue;
+		  }
+		  
+		  #exit{
+		  position:absolute;
+		  top:15px; 
+		  left:1500px;
+		  border: 2px solid lightsteelblue;
+		  background-color: lightsteelblue;
+		  height: 35px;
+		  width: 60px;
+		  }
+
+          #dd {
+		  position: absolute;
+		  width: 200px;
+		  padding: 10px;
+		  top:520px; 
+		  left:50px;
+		  margin: 0 auto;
+		  background: SteelBlue;
+		  color: midnightblue;
+		  outline: no;
+		  cursor: pointer;
+		  font-weight: bold;
+		  font-family: verdana, sans-serif;
+		  border: 1px solid MidnightBlue;
+		  }		  
+		  
+		  #dd:after {
+		  
+		  }
+		  </style>
+		  
+     </head>
+        <body background="C:\Users\sony\Desktop\Chat\f.jpg">
+     	     <h1 align=center style="color: MidnightBlue"><font size=10 face="verdana">MY CHAT</font></h1>
+			 <img src = "C:\Users\sony\Desktop\Chat\man1.jpg" id="imm" align=left style="color: MidnightBlue" border="4"></img>
+			 <img src = "C:\Users\sony\Desktop\Chat\man1.jpg" align=right style="color: MidnightBlue" border="4"></img>
+			 <div id="man">
+			       <a href="account.html"><font size="5" color="MidnightBlue" face="verdana">MAN</font></a>
+             </div>
+			 <div id="me">
+			       <a href="account.html"><font size="5" color="MidnightBlue" face="verdana">ME</font></a>
+             </div>
+			 <textarea id="massage" name"massage" cols=63 rows=3 ></textarea>
+			 <textarea id="massages" name"massages" cols=63 rows=15 ></textarea>
+			 <p><input type="submit" id="send" name="submit" value="send"></p>
+			 <p><input type="reset"  id="reset" name="submit" value="reset"></p>
+			 <p><input type="button"  id="exit" name="exit" value="Exit"></p>
+			 
+			 <div id="dd"clas="wrapper-dropdown-1" tabindex="1">
+			      <span>My friends</span>
+				  <ul clas="dropdown">
+				      <li><a href="#">first</a></li>
+					  <li><a href="#">second</a></li>
+				  </ul>
+			 </div>
+			 
+        </body>
+</html>

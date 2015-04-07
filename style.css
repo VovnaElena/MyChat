@@ -1,0 +1,159 @@
+body{
+    font-family: verdana, sans-serif;
+	background-color: #000;
+}
+
+#chat_name{
+    color: red;
+}
+
+.main{
+	font-size: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.enter_in_account{
+	margin-right: 10%;
+	float: right;
+}
+
+.input_text{
+    color: #00EE76;
+    font-size: 100%;   
+	font-family: verdana, sans-serif;
+    border-radius: 5px;
+    border: 1px solid #393939;
+	font-size: 100%;
+	background-color: #000;
+}
+
+#account_password{
+    margin-top: 5px;
+}
+
+.photo{
+    border: 1px solid #393939;
+	border-top-style: groove;
+	cursor: pointer;
+}
+
+#man_img{
+    margin-left: 10%;
+	margin-top: 2%;
+	height: 200px;
+	width: 190px;
+	border-radius: 5px;
+}
+
+#account_img{
+    margin-left: 5%;
+	margin-top: 2%;
+	margin-bottom: 80px;
+	height: 120px;
+	width: 120px;
+	border-radius: 80px;
+}
+
+#interlocutor{
+    color: red;
+	font-size: 25px;
+}
+
+#greeting{
+    color: red;
+    position: absolute;
+	margin-top: 100px;
+	font-size: 35px;
+}
+
+.dialog{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.input_message{
+ 	font-size: 100%;   
+	font-family: verdana, sans-serif;
+	border: 1px solid #393939;
+	border-radius: 5px;
+    background-color: #000;
+}
+
+#messages{
+    margin-top: 40px;
+	width: 100%;
+    height: 250px;
+    overflow: auto;
+	overflow-x: hidden !important;
+}
+
+#message_box_in{
+    text-align: right;
+	color: #00BFFF;
+	width: 70%;
+	margin-left: 25%;
+	word-wrap: break-word;
+}
+
+#button_d{
+    height: 15px;
+	width: 15px;
+	border: 1px solid red;
+	background-color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 7px;
+	margin-top: 3px;
+}
+
+#message_box_out{
+    text-align: left;
+	color: gray;
+	width: 100%;
+}
+
+#message{
+    color: #00BFFF;
+    margin-top: 15px;
+	width: 97%;	
+}
+
+.button {
+    border-radius: 5px;
+	cursor: pointer;
+}
+
+#send {
+    position: absolute;
+	margin-top: 15px;
+    background-color: #000;
+	border-color: green;
+	height: 20px;
+}
+
+#reset {
+    position: absolute;
+	margin-top: 40px;
+    background-color: #000;
+	border-color: red;
+	height: 20px;
+}
+
+#enter{
+	color: gray;
+	height: 24px;
+	font-size: 18px;
+	border: 1px solid #393939;
+	background-color: #000;
+}
+
+#exit{
+    margin-left: 95%;
+	color: gray;
+	height: 30px;
+	font-size: 20px;
+	border: 1px solid #393939;
+	background-color: #000;
+}
+

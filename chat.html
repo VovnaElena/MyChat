@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <meta charset="utf-8">
-          <title>My chat</title>
-		  <link rel="stylesheet" type="text/css" href="style.css" />
-          <script type="text/javascript" src="script.js"></script>
-		  
-		  
-     </head>
-        <body background = "C:\Users\sony\Desktop\MyChat\f.jpg">
-		    <div class = "enter_in_account">
-			    <input id = "account_name" type = "text" class = "input_text" placeholder = "enter your name"><br>
-			    <input id = "account_password" type = "text" class = "input_text" placeholder= "enter your password">
-				<input id = "enter" class = "button" type = "button" name = "Enter" value = "enter" onclick = "enterInAccount()">
-			</div> 
-			
-		    <div class = "main">
-			     <h1 id = "chat_name">Student chat</h1>
-				 <hr id = "line" color = "#393939" size = "1px">
-			</div>
-			
-			<div class = "interlocutors">
-			     <img id = "man_img" class = "photo" src = "C:\Users\sony\Desktop\MyChat\p1.jpg"></img>
-			     <a id = "interlocutor">Filya</a>
-				 <img id = "account_img" class = "photo" src = "C:\Users\sony\Desktop\MyChat\p2.jpg"></img>
-                 <a id = "greeting">Hello, Natyralniy Blondin!</a>
-				 
-			</div>
-			
-			<div class = "dialog">
-			    <div id = "messages" class = "input_message" >
-				
+<head>
+    <meta charset="utf-8">
+    <title>Student chat</title>
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/java.js"></script>
+</head>
+<body onload="run();">
+
+	<div class = "main" >
+		<div class = "enter_in_account">
+			<input id = "name_account" type="text" class="account_form" placeholder="enter your name"><br>
+			<input id = "password_account" type="text" class="account_form" placeholder="enter your password">
+			<button id="enter" class="account_form" type="submit" onclick = "enter();">enter</button>
+		</div>
+		
+		<div class="head">
+				<h1 id = "chat_name">Student chat</h1>
+				<hr id = "line" color = "#393939" size = "1px">
+		</div>
+		
+		
+		<div class = "information-panel">
+			<img id = "man_img" class = "photo" src = "C:\Users\sony\Desktop\chat\p1.png"></img>
+				 <img id = "account_img" class = "photo" src = "C:\Users\sony\Desktop\chat\p2.png"></img><br>
+				 <a id = "interlocutor">man</a>
+				 <a id = "greeting">Hello, Man!</a>
+		</div>
+		
+		<div class="dialog-panel">
+			<div id = "message-history" class="area">
+				<div id = "received">
+					
 				</div>
-			    <textarea id = "message" type = "text" class = "input_message" name="message" placeholder="enter your massage" cols=80 rows=2 ></textarea>
-					<input type="submit" id="send"  class = "button" name="send" value = " " onclick = "send()">
-			        <input type="reset"  id="reset" class = "button" name="reset" value = " " onclick = "reset()">
-					<br><br><br>
-					<input type="button"  id="exit" class = "button" name="exit" value="exit" onclick="exit()">
+				<div class = "sent">
+					
+				</div>
 			</div>
-			
-			
-        </body>
-</html>
+			<textarea id = "message" type="text" class="area" placeholder = "enter your message"></textarea>
+		    <button id = "message-button" type="submit" class="btn btn-primary" >Send Message</button>
+			<button id = "message-button2" type="submit" class="" >Del Message</button>
+		</div>
+		
+	</div>
+	
+	<script type="text/javascript">
+		function divPosition()
+		{    
+			document.getElementById("sent-message-area").style.left = screen.availWidth/2 - document.getElementById("sent-message-area").offsetWidth/2 + "px";
+		}
+	</script>
+</body>
+</html> 
